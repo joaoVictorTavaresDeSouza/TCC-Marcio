@@ -76,33 +76,18 @@ select {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #f2ecdf 0%, #d7e5d8 100%);
+  background: rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 0 0 2px rgba(53, 91, 76, 0.22);
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: 7px 9px auto auto;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(40, 75, 60, 0.8);
-}
-
-.brand-mark::after {
-  inset: auto auto 7px 9px;
-  background: rgba(40, 75, 60, 0.64);
-}
-
-.brand-mark-inner {
-  position: absolute;
-  inset: 11px 10px 11px 10px;
-  border-radius: 50% 50% 50% 0;
-  border: 2px solid rgba(30, 41, 37, 0.72);
-  transform: rotate(45deg);
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .main-nav,
