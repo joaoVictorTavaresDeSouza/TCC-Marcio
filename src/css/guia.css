@@ -1,1 +1,156 @@
 @import url(./global.css);
+
+.guide-page {
+	padding-bottom: 20px;
+}
+
+.guide-intro {
+	padding: 52px 24px 44px;
+	background: rgba(54, 91, 76, 0.08);
+	text-align: center;
+}
+
+.guide-intro .eyebrow {
+	margin-bottom: 10px;
+	color: var(--green-dark);
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.guide-intro h1 {
+	margin-bottom: 12px;
+	color: #435f3c;
+	font-size: clamp(2rem, 4vw, 3.2rem);
+	line-height: 1.1;
+}
+
+.guide-intro > p:last-child {
+	max-width: 520px;
+	margin: 0 auto;
+	color: var(--text-soft);
+}
+
+.guide-steps {
+	display: grid;
+	gap: 24px;
+	padding-top: 46px;
+}
+
+.guide-step {
+	display: grid;
+	grid-template-columns: 160px minmax(0, 440px);
+	align-items: center;
+	justify-content: center;
+	gap: 28px;
+	min-height: 150px;
+}
+
+.guide-step-reverse {
+	grid-template-columns: minmax(0, 440px) 160px;
+}
+
+.guide-step-reverse .step-number {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.guide-step-reverse .step-content {
+	grid-column: 1;
+	grid-row: 1;
+	text-align: right;
+}
+
+.step-number {
+	color: #8d3f12;
+	font-size: clamp(4.5rem, 8vw, 6rem);
+	font-weight: 800;
+	line-height: 0.9;
+}
+
+.step-content h2 {
+	margin-bottom: 8px;
+	color: #5d301c;
+	font-size: 1.05rem;
+}
+
+.step-content p {
+	margin-bottom: 0;
+	color: var(--text-soft);
+	font-size: 0.84rem;
+	line-height: 1.45;
+}
+
+.cta {
+	padding-bottom: 30px;
+}
+
+.cta-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px 24px 34px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 24px;
+}
+
+.cta-box p {
+	margin-bottom: 10px;
+	color: var(--white);
+	font-size: clamp(1.4rem, 2vw, 2rem);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.cta-box small {
+	max-width: 620px;
+	margin-bottom: 18px;
+	color: rgba(255, 255, 255, 0.78);
+}
+
+.site-footer {
+	margin-top: 36px;
+}
+
+@media (max-width: 700px) {
+	.guide-intro {
+		padding: 38px 20px 34px;
+	}
+
+	.guide-steps {
+		gap: 12px;
+		padding-top: 30px;
+	}
+
+	.guide-step,
+	.guide-step-reverse {
+		grid-template-columns: 72px minmax(0, 1fr);
+		gap: 18px;
+		min-height: 130px;
+	}
+
+	.guide-step-reverse .step-number,
+	.guide-step-reverse .step-content {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.guide-step-reverse .step-content {
+		text-align: left;
+	}
+
+	.step-number {
+		font-size: 3.5rem;
+	}
+
+	.step-content h2 {
+		font-size: 0.95rem;
+	}
+
+	.step-content p {
+		font-size: 0.78rem;
+	}
+}

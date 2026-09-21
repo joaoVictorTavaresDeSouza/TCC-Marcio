@@ -1,1 +1,214 @@
 @import url(./global.css);
+
+.reactor-page {
+	padding: 48px 0 16px;
+}
+
+.reactor-intro {
+	text-align: center;
+}
+
+.eyebrow {
+	margin-bottom: 10px;
+	color: var(--green-dark);
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.reactor-intro h1 {
+	max-width: 680px;
+	margin: 0 auto 12px;
+	color: #1c2d28;
+	font-size: clamp(2.3rem, 5vw, 4rem);
+	line-height: 1.05;
+}
+
+.intro-text {
+	max-width: 560px;
+	margin: 0 auto 24px;
+	color: var(--text-soft);
+}
+
+.reactor-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.reactor-links .btn {
+	min-height: 34px;
+	padding: 0 16px;
+	font-size: 0.78rem;
+}
+
+.reactor-image {
+	overflow: hidden;
+	background: rgba(54, 91, 76, 0.08);
+	border: 1px solid rgba(54, 91, 76, 0.2);
+	border-radius: 14px;
+	box-shadow: var(--shadow-soft);
+}
+
+.reactor-hero-image {
+	display: block;
+	width: 100%;
+	height: 150px;
+	border: 1px solid rgba(54, 91, 76, 0.2);
+	border-radius: 14px;
+	box-shadow: var(--shadow-soft);
+	object-fit: cover;
+}
+
+.reactor-image {
+	min-height: 250px;
+}
+
+.reactor-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.reactor-section-grid-reverse .reactor-image {
+	width: min(100%, 320px);
+	height: auto;
+	margin: 0 auto;
+	min-height: 0;
+}
+
+.reactor-section-grid-reverse .reactor-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.reactor-section {
+	padding-top: 58px;
+}
+
+.reactor-section h2 {
+	width: fit-content;
+	margin: 0 auto 22px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgba(54, 91, 76, 0.2);
+	color: #1c2d28;
+	font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.reactor-section-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 34px;
+}
+
+.reactor-copy {
+	color: var(--text-soft);
+	font-size: 0.95rem;
+}
+
+.reactor-copy p {
+	margin-bottom: 0;
+}
+
+.reactor-copy ol {
+	margin: 0;
+	padding-left: 22px;
+}
+
+.reactor-copy li {
+	padding-left: 6px;
+	margin-bottom: 10px;
+}
+
+.reactor-benefit {
+	max-width: 760px;
+	margin-top: 58px;
+	padding-top: 28px;
+	padding-bottom: 30px;
+	background: var(--green-dark);
+	border-radius: 12px;
+	color: var(--white);
+	text-align: center;
+	box-shadow: var(--shadow-soft);
+}
+
+.reactor-benefit h2 {
+	margin-bottom: 12px;
+	font-size: 1.35rem;
+}
+
+.reactor-benefit p {
+	max-width: 580px;
+	margin: 0 auto;
+	color: rgba(255, 255, 255, 0.82);
+	font-size: 0.92rem;
+}
+
+.cta {
+	padding-bottom: 30px;
+}
+
+.cta-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px 24px 34px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 24px;
+}
+
+.cta-box p {
+	margin-bottom: 10px;
+	color: var(--white);
+	font-size: clamp(1.4rem, 2vw, 2rem);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.cta-box small {
+	max-width: 620px;
+	margin-bottom: 18px;
+	color: rgba(255, 255, 255, 0.78);
+}
+
+.site-footer {
+	margin-top: 58px;
+}
+
+@media (max-width: 700px) {
+	.reactor-page {
+		padding-top: 34px;
+	}
+
+	.reactor-section-grid,
+	.reactor-section-grid-reverse {
+		grid-template-columns: 1fr;
+		gap: 22px;
+	}
+
+	.reactor-section-grid-reverse .reactor-image {
+		grid-row: 1;
+	}
+
+	.reactor-hero-image {
+		height: 120px;
+	}
+
+	.reactor-image {
+		min-height: 210px;
+	}
+
+	.reactor-section-grid-reverse .reactor-image {
+		width: min(100%, 240px);
+		min-height: 0;
+	}
+
+}

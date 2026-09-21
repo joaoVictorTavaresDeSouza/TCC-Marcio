@@ -69,7 +69,7 @@
   flex-direction: column;
   gap: 14px;
   padding: 26px 22px 18px;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--green-dark);
   border-radius: 22px;
   border: 1px solid rgba(41, 68, 57, 0.08);
 }
@@ -97,12 +97,12 @@
 .feature-card h3 {
   font-size: 1.15rem;
   line-height: 1.3;
-  color: #1f2d2a;
+  color: var(--white);
   margin-bottom: 0;
 }
 
 .feature-card p {
-  color: var(--text-soft);
+  color: var(--white);
   margin-bottom: 0;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .cta {
-  padding: 12px 0 6px;
+  padding: 0 0 30px;
 }
 
 .cta-box {
@@ -139,10 +139,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 28px 24px 34px;
-  background: rgba(255, 255, 255, 0.12);
+  padding: 30px 24px 34px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  border: 1px solid rgba(41, 68, 57, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .cta-box p {
@@ -150,14 +150,14 @@
   line-height: 1.2;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #1d2a26;
+  color: var(--white);
 }
 
 .cta-box small {
   display: block;
   max-width: 620px;
   margin-bottom: 18px;
-  color: var(--text-soft);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 @media (max-width: 900px) {

@@ -8,12 +8,13 @@
       name="description"
       content="Natural Synergy é uma tecnologia que respira com a natureza e oferece soluções inovadoras para um futuro mais sustentável."
     />
+    <link rel="icon" type="image/png" href="assets/imgs/Logo%20%20Natural%20Synergy.png" />
     <link rel="stylesheet" href="src/css/global.css" />
     <link rel="stylesheet" href="src/css/index.css" />
     <script src="src/js/main.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
+    <div class="site-header">
       <div class="container header-inner">
         <div class="brand" aria-label="Natural Synergy logo">
           <div class="brand-mark">
@@ -21,16 +22,16 @@
           </div>
         </div>
 
-        <nav class="main-nav" aria-label="Navegação principal">
-          <a href="#">O reator</a>
-          <a href="#">Vitrine Técnica</a>
-          <a href="#">Guia de Uso</a>
-          <a href="#">Sobre nós</a>
-        </nav>
+        <div class="main-nav">
+          <a href="./src/pages/reator.html">O reator</a>
+          <a href="./src/pages/vitrine.html">Vitrine Técnica</a>
+          <a href="./src/pages/guia.html">Guia de Uso</a>
+          <a href="./src/pages/sobre.html">Sobre nós</a>
+        </div>
 
-        <a href="#" class="header-login">Login</a>
+        <a href="./src/pages/login.html" class="header-login">Login</a>
       </div>
-    </header>
+    </div>
 
     <main class="home-page">
       <section class="hero container">
@@ -46,19 +47,19 @@
             o ar que respiramos em um futuro mais sustentável.
           </p>
 
-          <a href="#" class="btn btn-primary">Iniciar navegação</a>
+          <a href="#benefits" class="btn btn-primary">Iniciar navegação</a>
         </div>
 
-        <div class="hero-visual" aria-label="Imagem do reator">
-          <div class="photo-placeholder hero-photo"></div>
+        <div class="hero-visual">
+          <img src="./assets/imgs/FÍSICO.png" alt="Visual do sistema" />
         </div>
       </section>
 
-      <section class="benefits container">
+      <section id="benefits" class="benefits container">
         <h2>Veja como te ajudaremos!</h2>
 
         <div class="feature-grid">
-          <article class="feature-card">
+          <div class="feature-card">
             <div class="icon-wrap">
               <img class="icon" src="assets/imgs/oAr.png" alt="Ilustração do ar que respiramos" />
             </div>
@@ -67,9 +68,9 @@
               Nas grandes cidades, a pior parte do CO₂ e da poluição está no ar que
               respiramos todos os dias. A natureza tem soluções mais inteligentes.
             </p>
-          </article>
+          </div>
 
-          <article class="feature-card">
+          <div class="feature-card">
             <div class="icon-wrap">
               <img class="icon" src="assets/imgs/fotossintese.png" alt="Ilustração da fotossíntese" />
             </div>
@@ -79,13 +80,13 @@
               para capturar e transformar o CO₂ em oxigênio e biomassa de forma
               sustentável.
             </p>
-          </article>
+          </div>
         </div>
       </section>
 
       <section class="about container">
         <div class="about-visual" aria-label="Visual do sistema">
-          <div class="photo-placeholder about-photo"></div>
+          <img src="./assets/imgs/CO2.png" alt="CO2 no céu" />
         </div>
 
         <div class="about-copy">
@@ -100,29 +101,28 @@
         </div>
       </section>
 
-      <section class="cta container">
+    </main>
+
+    <footer class="site-footer">
+      <div class="cta container">
         <div class="cta-box">
           <p>Tenha mais detalhes na palma da sua mão!</p>
           <small>O Natural Synergy já é um aplicativo móvel que ajuda você a acompanhar o seu ambiente.</small>
           <a href="#" class="btn btn-secondary">Baixar aplicativo</a>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="brand-mark small">
-            <span class="brand-mark-inner"></span>
-          </div>
+        <div class="brand-mark small">
+          <img class="brand-logo" src="assets/imgs/Logo  Natural Synergy.png" alt="Natural Synergy logo" />
         </div>
 
-        <nav class="footer-nav" aria-label="Navegação do rodapé">
-          <a href="#">O reator</a>
-          <a href="#">Vitine Técnica</a>
-          <a href="#">Guia de Uso</a>
-          <a href="#">Sobre nós</a>
-        </nav>
+        <div class="footer-nav">
+          <a href="./src/pages/reator.html">O reator</a>
+          <a href="./src/pages/vitine.html">Vitine Técnica</a>
+          <a href="./src/pages/guia.html">Guia de Uso</a>
+          <a href="./src/pages/sobre.html">Sobre nós</a>
+        </div>
       </div>
     </footer>
   </body>
